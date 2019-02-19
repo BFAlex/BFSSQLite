@@ -14,6 +14,13 @@
 		C4D511FB221BA2E700DBD06B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4D511F9221BA2E700DBD06B /* LaunchScreen.storyboard */; };
 		C4D511FE221BA2E700DBD06B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D511FD221BA2E700DBD06B /* main.m */; };
 		C4D51206221BA31800DBD06B /* BFsSQLiteAssistant.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D51205221BA31800DBD06B /* BFsSQLiteAssistant.m */; };
+		C4D5120A221BA95C00DBD06B /* BFsSQLiteModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D51209221BA95C00DBD06B /* BFsSQLiteModel.m */; };
+		C4D51212221BB15D00DBD06B /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D5120C221BAD9400DBD06B /* libsqlite3.0.tbd */; };
+		C4D51230221BD89E00DBD06B /* BFsSchool.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C4D5122E221BD89E00DBD06B /* BFsSchool.xcdatamodeld */; };
+		C4D51247221BDB1D00DBD06B /* Person+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D51244221BDB1D00DBD06B /* Person+CoreDataClass.m */; };
+		C4D51248221BDB1D00DBD06B /* Person+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D51246221BDB1D00DBD06B /* Person+CoreDataProperties.m */; };
+		C4D5124E221BDBE400DBD06B /* Teacher+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D5124B221BDBE400DBD06B /* Teacher+CoreDataClass.m */; };
+		C4D5124F221BDBE400DBD06B /* Teacher+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = C4D5124D221BDBE400DBD06B /* Teacher+CoreDataProperties.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +36,20 @@
 		C4D511FD221BA2E700DBD06B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C4D51204221BA31800DBD06B /* BFsSQLiteAssistant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFsSQLiteAssistant.h; sourceTree = "<group>"; };
 		C4D51205221BA31800DBD06B /* BFsSQLiteAssistant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFsSQLiteAssistant.m; sourceTree = "<group>"; };
+		C4D51208221BA95C00DBD06B /* BFsSQLiteModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BFsSQLiteModel.h; sourceTree = "<group>"; };
+		C4D51209221BA95C00DBD06B /* BFsSQLiteModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BFsSQLiteModel.m; sourceTree = "<group>"; };
+		C4D5120C221BAD9400DBD06B /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		C4D5120E221BB0ED00DBD06B /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		C4D5122F221BD89E00DBD06B /* BFsSchool.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BFsSchool.xcdatamodel; sourceTree = "<group>"; };
+		C4D51243221BDB1D00DBD06B /* Person+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataClass.h"; sourceTree = "<group>"; };
+		C4D51244221BDB1D00DBD06B /* Person+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataClass.m"; sourceTree = "<group>"; };
+		C4D51245221BDB1D00DBD06B /* Person+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C4D51246221BDB1D00DBD06B /* Person+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+CoreDataProperties.m"; sourceTree = "<group>"; };
+		C4D51249221BDB7700DBD06B /* BFsSchool 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "BFsSchool 2.xcdatamodel"; sourceTree = "<group>"; };
+		C4D5124A221BDBE400DBD06B /* Teacher+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Teacher+CoreDataClass.h"; sourceTree = "<group>"; };
+		C4D5124B221BDBE400DBD06B /* Teacher+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Teacher+CoreDataClass.m"; sourceTree = "<group>"; };
+		C4D5124C221BDBE400DBD06B /* Teacher+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Teacher+CoreDataProperties.h"; sourceTree = "<group>"; };
+		C4D5124D221BDBE400DBD06B /* Teacher+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Teacher+CoreDataProperties.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4D51212221BB15D00DBD06B /* libsqlite3.0.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +69,7 @@
 			children = (
 				C4D511ED221BA2DF00DBD06B /* BFSSQLite */,
 				C4D511EC221BA2DF00DBD06B /* Products */,
+				C4D5120B221BAD9400DBD06B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,10 +101,38 @@
 		C4D51207221BA31E00DBD06B /* Module */ = {
 			isa = PBXGroup;
 			children = (
+				C4D51216221BB53A00DBD06B /* Database */,
 				C4D51204221BA31800DBD06B /* BFsSQLiteAssistant.h */,
 				C4D51205221BA31800DBD06B /* BFsSQLiteAssistant.m */,
+				C4D51208221BA95C00DBD06B /* BFsSQLiteModel.h */,
+				C4D51209221BA95C00DBD06B /* BFsSQLiteModel.m */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		C4D5120B221BAD9400DBD06B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C4D5120E221BB0ED00DBD06B /* libsqlite3.tbd */,
+				C4D5120C221BAD9400DBD06B /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C4D51216221BB53A00DBD06B /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				C4D5124A221BDBE400DBD06B /* Teacher+CoreDataClass.h */,
+				C4D5124B221BDBE400DBD06B /* Teacher+CoreDataClass.m */,
+				C4D5124C221BDBE400DBD06B /* Teacher+CoreDataProperties.h */,
+				C4D5124D221BDBE400DBD06B /* Teacher+CoreDataProperties.m */,
+				C4D51243221BDB1D00DBD06B /* Person+CoreDataClass.h */,
+				C4D51244221BDB1D00DBD06B /* Person+CoreDataClass.m */,
+				C4D51245221BDB1D00DBD06B /* Person+CoreDataProperties.h */,
+				C4D51246221BDB1D00DBD06B /* Person+CoreDataProperties.m */,
+				C4D5122E221BD89E00DBD06B /* BFsSchool.xcdatamodeld */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,6 +166,7 @@
 				TargetAttributes = {
 					C4D511EA221BA2DF00DBD06B = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -154,10 +206,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4D51248221BDB1D00DBD06B /* Person+CoreDataProperties.m in Sources */,
 				C4D511F3221BA2DF00DBD06B /* ViewController.m in Sources */,
 				C4D511FE221BA2E700DBD06B /* main.m in Sources */,
 				C4D51206221BA31800DBD06B /* BFsSQLiteAssistant.m in Sources */,
+				C4D5124F221BDBE400DBD06B /* Teacher+CoreDataProperties.m in Sources */,
+				C4D5124E221BDBE400DBD06B /* Teacher+CoreDataClass.m in Sources */,
 				C4D511F0221BA2DF00DBD06B /* AppDelegate.m in Sources */,
+				C4D5120A221BA95C00DBD06B /* BFsSQLiteModel.m in Sources */,
+				C4D51247221BDB1D00DBD06B /* Person+CoreDataClass.m in Sources */,
+				C4D51230221BD89E00DBD06B /* BFsSchool.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +357,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9V8N93HLK3;
 				INFOPLIST_FILE = BFSSQLite/Info.plist;
@@ -307,8 +366,11 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TestAppIDs.BFSSQLite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -317,6 +379,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9V8N93HLK3;
 				INFOPLIST_FILE = BFSSQLite/Info.plist;
@@ -325,8 +388,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.TestAppIDs.BFSSQLite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -353,6 +418,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C4D5122E221BD89E00DBD06B /* BFsSchool.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C4D51249221BDB7700DBD06B /* BFsSchool 2.xcdatamodel */,
+				C4D5122F221BD89E00DBD06B /* BFsSchool.xcdatamodel */,
+			);
+			currentVersion = C4D51249221BDB7700DBD06B /* BFsSchool 2.xcdatamodel */;
+			path = BFsSchool.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C4D511E3221BA2DF00DBD06B /* Project object */;
 }
