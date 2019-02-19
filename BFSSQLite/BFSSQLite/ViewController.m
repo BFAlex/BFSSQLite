@@ -44,7 +44,7 @@
     BFsSQLiteAssistant *dbAssistant = [BFsSQLiteAssistant sharedInstanced];
     // 查
     NSError *error;
-    NSPredicate *tPredicate = [NSPredicate predicateWithFormat:nil];
+    NSPredicate *tPredicate = [NSPredicate predicateWithFormat:@"age=18"];
     NSArray *resultArr = [dbAssistant query:@"Teacher" predicate:tPredicate error:&error];
     NSLog(@"result number:%ld", resultArr.count);
     for (Teacher *t in resultArr) {
