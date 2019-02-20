@@ -24,6 +24,8 @@ NS_ASSUME_NONNULL_BEGIN
 - (id)createModel:(NSString *)entityName;
 - (void)saveModel:(NSManagedObject *)model;
 - (NSArray *)query:(NSString *)entityName predicate:(NSPredicate *)predicate error:(NSError * _Nullable __autoreleasing * _Nullable)error;
+- (NSArray *)query:(NSString *)entityName predicate:(NSPredicate *)predicate ascending:(BOOL)ascending error:(NSError *__autoreleasing  _Nullable *)error;
+- (void)deleteModel:(NSManagedObject *)model error:(NSError * _Nullable __autoreleasing * _Nullable)error;
 
 @end
 

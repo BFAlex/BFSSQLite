@@ -13,10 +13,10 @@
 
 - (void)setupDefauleStatus {
     
-    self.t_id = @"20190219";
-    self.name = @"Mimi";
+    self.t_id = @"20190220";
     self.gender = @"Women";
-    self.age = 18;
+    self.age = arc4random() % 80 + 18;
+    self.name = [NSString stringWithFormat:@"%@%02d", self.t_id, self.age];
 }
 
 - (NSString *)description {

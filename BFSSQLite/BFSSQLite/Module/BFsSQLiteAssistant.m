@@ -82,6 +82,30 @@ static dispatch_once_t  onceToken;
     return [_managedObjectContext executeFetchRequest:request error:error];
 }
 
+- (NSArray *)query:(NSString *)entityName predicate:(NSPredicate *)predicate ascending:(BOOL)ascending error:(NSError * _Nullable __autoreleasing *)error {
+    if (entityName.length < 1) {
+        return nil;
+    }
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:entityName];
+    NSSortDescriptor *ageSD = [NSSortDescriptor sortDescriptorWithKey:@"age" ascending:ascending];
+    request.sortDescriptors = @[ageSD];
+    if (predicate) {
+        request.predicate = predicate;
+    }
+    
+    return [_managedObjectContext executeFetchRequest:request error:error];
+}
+
+- (void)deleteModel:(NSManagedObject *)model error:(NSError *__autoreleasing  _Nullable * _Nullable)error {
+    
+    if (!model) {
+        return;
+    }
+    
+    [_managedObjectContext deleteObject:model];
+    [_managedObjectContext save:error];
+}
+
 #pragma mark - Property
 
 - (BFsSQLiteModel *)model {

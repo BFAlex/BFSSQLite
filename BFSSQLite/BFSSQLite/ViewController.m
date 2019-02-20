@@ -25,32 +25,73 @@
 - (void)testSQLite {
     
 //    [self addModel];
-    [self queryModel];
+//    [self queryModel];
+//    [self deleteModel];
+    [self queryModelsSort];
 }
 
 - (void)addModel {
     
     BFsSQLiteAssistant *dbAssistant = [BFsSQLiteAssistant sharedInstanced];
     // 增
-    Teacher *teacherModel = [dbAssistant createModel:@"Teacher"];
-    NSLog(@"model: %@", teacherModel);
-    [teacherModel setupDefauleStatus];
-    NSLog(@"model: %@", teacherModel);
-    [dbAssistant saveModel:teacherModel];
+    for (int i = 0; i < 10; i++) {
+        Teacher *teacherModel = [dbAssistant createModel:@"Teacher"];
+        [teacherModel setupDefauleStatus];
+        NSLog(@"model: %@", teacherModel);
+        [dbAssistant saveModel:teacherModel];
+    }
 }
 
-- (void)queryModel {
+- (NSArray *)queryModel {
     
     BFsSQLiteAssistant *dbAssistant = [BFsSQLiteAssistant sharedInstanced];
     // 查
     NSError *error;
-    NSPredicate *tPredicate = [NSPredicate predicateWithFormat:@"age=18"];
+    NSPredicate *tPredicate;
+    tPredicate = [NSPredicate predicateWithFormat:nil];
+//    tPredicate = [NSPredicate predicateWithFormat:@"age=18"];
+//    tPredicate = [NSPredicate predicateWithFormat:@"name='Mimi'"];
+//    tPredicate = [NSPredicate predicateWithFormat:@"age>='18' && age<'28'"];
+    
     NSArray *resultArr = [dbAssistant query:@"Teacher" predicate:tPredicate error:&error];
     NSLog(@"result number:%ld", resultArr.count);
     for (Teacher *t in resultArr) {
         NSLog(@"teacher:%@", t);
     }
+    
+    return resultArr;
 }
 
+- (NSArray *)queryModelsSort {
+    
+    BFsSQLiteAssistant *dbAssistant = [BFsSQLiteAssistant sharedInstanced];
+    // 查
+    NSError *error;
+    
+    NSPredicate *tPredicate;
+    tPredicate = [NSPredicate predicateWithFormat:@"age>=20 && age<60"];
+    NSArray *resultArr = [dbAssistant query:@"Teacher" predicate:tPredicate ascending:NO error:&error];
+    NSLog(@"result number:%ld", resultArr.count);
+    for (Teacher *t in resultArr) {
+        NSLog(@"teacher:%@", t);
+    }
+    
+    return resultArr;
+}
+
+- (void)deleteModel {
+    
+    BFsSQLiteAssistant *dbAssistant = [BFsSQLiteAssistant sharedInstanced];
+    NSError *err;
+    NSArray *models = [self queryModel];
+    for (NSManagedObject *obj in models) {
+        [dbAssistant deleteModel:obj error:&err];
+        if (err) {
+            NSLog(@"delete error: %@", err.description);
+            return;
+        }
+    }
+    NSLog(@"delete all data.");
+}
 
 @end
